@@ -39,6 +39,7 @@ This is a final project for COMP 4447 that demonstrates collecting, manipulating
 - stadium_attendance : Attendance for the game
 - stadium_capacity : Capcity of the stadium
 - game_date : Date of the game
+- game_location : The city, state where the game was played
 - season : year (2017 - 2022)
 
 # Engineered Features
