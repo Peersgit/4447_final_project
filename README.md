@@ -1,7 +1,7 @@
 # 4447_final_project
 A final project for DU MSDS 4447 Data Science Tools 1
 
-This is a final project for COMP 4447 that demonstrate collecting, manipulating, and cleaning data for further use. The scope of the project is to collect data from ESPN on NFL games since 2017 and conduct exploratory analysis on the effects COVID-19 had on the sport. To retrieve the data, a webscraping script was made using aiohttp and asyncio to efficiently and quickly extract usefull information from an HTML web page. From this script, another notebook file is used to clean and engineer new features that will provide usefull information for our EDA analysis.
+This is a final project for COMP 4447 that demonstrate collecting, manipulating, and cleaning data for further use. The scope of the project is to collect data from ESPN on NFL games since 2017 and conduct exploratory analysis on the effects COVID-19 had on the sport. To retrieve the data, a web scraping script was made using aiohttp and asyncio to efficiently and quickly extract useful information from an HTML web page. From this script, another notebook file is used to clean and engineer new features that will provide useful information for our EDA analysis.
 
 
 # Literature Review
@@ -37,8 +37,8 @@ This is a final project for COMP 4447 that demonstrate collecting, manipulating,
 - season : year (2017 - 2022)
 
 # Engineered Features
-- away_team_win_perc : The win percentage for the away team at every game. (if they win their first game, their win % for the second game would be 100%)
-- home_team_win_perc : The win percentage for the home team at every game. (if they win their first game, their win % for the second game would be 100%)
+- away_team_win_perc : The win percentage for the away team at every game. (If they win their first game, their win % for the second game would be 100%)
+- home_team_win_perc : The win percentage for the home team at every game. (If they win their first game, their win % for the second game would be 100%)
 - Q1_diff : The difference between the home and away quarter 1 score
 - Q2_diff : The difference between the home and away quarter 2 score
 - Q3_diff : The difference between the home and away quarter 3 score
