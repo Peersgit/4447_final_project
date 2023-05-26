@@ -1,7 +1,7 @@
 # 4447_final_project
 A final project for DU MSDS 4447 Data Science Tools 1
 
-This is a final project for COMP 4447 that demonstrate collecting, manipulating, and cleaning data for further use. The scope of the project is to collect data from ESPN on NFL games since 2017 and conduct exploratory analysis on the effects COVID-19 had on the sport. To retrieve the data, a web scraping script was made using aiohttp and asyncio to efficiently and quickly extract useful information from an HTML web page. From this script, another notebook file is used to clean and engineer new features that will provide useful information for our EDA analysis.
+This is a final project for COMP 4447 that demonstrates collecting, manipulating, cleaning, and visualizing data for further use. The scope of the project is to collect data from ESPN on NFL games since 2017 and conduct exploratory analysis on the effects COVID-19 had on the sport. To retrieve the data, a web scraping script was made using the python libraries aiohttp and asyncio to efficiently and quickly extract useful information from an HTML web page. From this script, another notebook file is used to clean and engineer new features that will provide useful information for our EDA analysis.
 
 
 # Literature Review
