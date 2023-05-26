@@ -15,45 +15,45 @@ This is a final project for COMP 4447 that demonstrate collecting, manipulating,
 
 
 # Collected Features
-game_url : url for the game
-away_team_name : The name of the away team
-away_team_initials : The initials for the away team
-away_Q1 : First quarter score for the away team
-away_Q2 : Second quarter score for the away team
-away_Q3 : Third quarter score for the away team
-away_Q4 : Fourth quarter score for the away team
-away_final_score : The away teams final score of the match
-home_team_name : The name of the home team
-home_team_initials : The initials for the home team
-home_Q1 : First quarter score for the home team
-home_Q2 : Second quarter score for the home team
-home_Q3 : Third quarter score for the home team
-home_Q4 : Fourth quarter score for the home team
-home_final_score : The home team final score of the match
-stadium_name : Name of the stadium
-stadium_attendance : Attendance for the game
-stadium_capacity : Capcity of the stadium
-game_date : Date of the game
-season : year (2017 - 2022)
+- game_url : url for the game
+- away_team_name : The name of the away team
+- away_team_initials : The initials for the away team
+- away_Q1 : First quarter score for the away team
+- away_Q2 : Second quarter score for the away team
+- away_Q3 : Third quarter score for the away team
+- away_Q4 : Fourth quarter score for the away team
+- away_final_score : The away teams final score of the match
+- home_team_name : The name of the home team
+- home_team_initials : The initials for the home team
+- home_Q1 : First quarter score for the home team
+- home_Q2 : Second quarter score for the home team
+- home_Q3 : Third quarter score for the home team
+- home_Q4 : Fourth quarter score for the home team
+- home_final_score : The home team final score of the match
+- stadium_name : Name of the stadium
+- stadium_attendance : Attendance for the game
+- stadium_capacity : Capcity of the stadium
+- game_date : Date of the game
+- season : year (2017 - 2022)
 
 # Engineered Features
-away_team_win_perc : The win percentage for the away team at every game. (if they win their first game, their win % for the second game would be 100%)
-home_team_win_perc : The win percentage for the home team at every game. (if they win their first game, their win % for the second game would be 100%)
-Q1_diff : The difference between the home and away quarter 1 score
-Q2_diff : The difference between the home and away quarter 2 score
-Q3_diff : The difference between the home and away quarter 3 score
-Q4_diff : The difference between the home and away quarter 4 score
-final_score_diff : The difference between the final score for the home and away team
-home_avg : The average points score for all 4 quarters, home
-away_avg : The average points score for all 4 quarters, away
-winner : The finner of the game, 1:home, 0:away
-lat_away : Coordinates for the away team
-long_away : Coordinates for the away team
-lat_home : Coordinates for the home team
-long_home : Coordinates for the home team
-lat_game : Coordinates for the stadium the game is played at
-long_game : Coordinates for the stadium the game is played at
-away_distance_to_game : The distance the away team had to travel for each game
-home_distance_to_game : The distance the home team had to travel for each game
-city : The name of the city the stadium resides in
-state_code : The state code for that city
+- away_team_win_perc : The win percentage for the away team at every game. (if they win their first game, their win % for the second game would be 100%)
+- home_team_win_perc : The win percentage for the home team at every game. (if they win their first game, their win % for the second game would be 100%)
+- Q1_diff : The difference between the home and away quarter 1 score
+- Q2_diff : The difference between the home and away quarter 2 score
+- Q3_diff : The difference between the home and away quarter 3 score
+- Q4_diff : The difference between the home and away quarter 4 score
+- final_score_diff : The difference between the final score for the home and away team
+- home_avg : The average points score for all 4 quarters, home
+- away_avg : The average points score for all 4 quarters, away
+- winner : The finner of the game, 1:home, 0:away
+- lat_away : Coordinates for the away team
+- long_away : Coordinates for the away team
+- lat_home : Coordinates for the home team
+- long_home : Coordinates for the home team
+- lat_game : Coordinates for the stadium the game is played at
+- long_game : Coordinates for the stadium the game is played at
+- away_distance_to_game : The distance the away team had to travel for each game
+- home_distance_to_game : The distance the home team had to travel for each game
+- city : The name of the city the stadium resides in
+- state_code : The state code for that city
