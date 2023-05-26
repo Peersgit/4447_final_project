@@ -14,6 +14,11 @@ This is a final project for COMP 4447 that demonstrate collecting, manipulating,
 - [Scraper](ScrapeESPN.py)
 
 
+# Binder
+- [Analysis.ipynb](https://mybinder.org/v2/gh/Peersgit/4447_final_project/main?labpath=Analysis.ipynb)
+- [featureEngineering.ipynb](https://mybinder.org/v2/gh/Peersgit/4447_final_project/main?labpath=featureEngineering.ipynb)
+
+
 # Collected Features
 - game_url : url for the game
 - away_team_name : The name of the away team
