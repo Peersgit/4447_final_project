@@ -34,7 +34,7 @@ This is a final project for COMP 4447 that demonstrates collecting, manipulating
 - home_Q2 : Second quarter score for the home team
 - home_Q3 : Third quarter score for the home team
 - home_Q4 : Fourth quarter score for the home team
-- home_final_score : The home team final score of the match
+- home_final_score : The home teams final score of the match
 - stadium_name : Name of the stadium
 - stadium_attendance : Attendance for the game
 - stadium_capacity : Capcity of the stadium
