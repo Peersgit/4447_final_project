@@ -8,7 +8,8 @@ import asyncio
 import aiohttp
 
 
-# A function to check the year
+# A function to check the year, helps let the crawler know which type of url to generate
+# This is because of the schedule change that took place in 2021
 def year_check(year):
     if year < 2020:
         return True
@@ -158,6 +159,7 @@ async def main():
     file_name = '-22'
 
     tasks=[]
+    # Collect the game ID's from the main page, for every year
     for year in years:
         for tp in tps:
             if year_check(year):
@@ -173,6 +175,7 @@ async def main():
     end_time_main = time.time()
 
     game_data_tasks = []
+    # Collect the
     for result in results:
         for game_id in result:
             game_data_tasks.append(asyncio.ensure_future(scrape_game_data(game_id)))
