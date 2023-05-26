@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 import pandas as pd
-import requests
 import time
 import re
 import numpy as np
@@ -8,21 +7,15 @@ import numpy as np
 import asyncio
 import aiohttp
 
-headers = {
-"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/101.0.4951.67 Safari/537.36"
-                }
 
-
-
-
+# A function to check the year
 def year_check(year):
     if year < 2020:
         return True
     else:
         return False
     
-
+# Asyncronous scraping of the main page (https://www.espn.com/nfl/scoreboard/_/week/2/year/2022/seasontype/2)
 async def scrape_main_page(url):
     async with aiohttp.ClientSession() as session:
         async with session.get(url) as response:
@@ -33,12 +26,13 @@ async def scrape_main_page(url):
             game_ids = extract_game_ids(html)
             return game_ids
 
+# Extract the ID of each game from the html
 def extract_game_ids(html):
     soup = BeautifulSoup(html, 'html.parser')
 
     return [box.get('id') for box in soup.find_all('section', class_=re.compile('^Scoreboard bg'))]
 
-
+# Asynchronous scraping of game data (https://www.espn.com/nfl/playbyplay/_/gameId/401434030)
 async def scrape_game_data(game_id):
     url = 'https://www.espn.com/nfl/playbyplay/_/gameId/{}'
     async with aiohttp.ClientSession() as session:
@@ -50,7 +44,7 @@ async def scrape_game_data(game_id):
             return data
 
 
-
+# Parse the html of the game page, extract usefull information
 def parse_html(html, url):
 
     soup = BeautifulSoup(html, 'html.parser')
@@ -127,14 +121,14 @@ def parse_html(html, url):
     }
     
 
-
+# Save the data to a csv file
 def save_data(data, name):
 
     frame = pd.DataFrame(data)
 
     frame.to_csv(name, index=False)
 
-
+# Attribute Error Check for HTML elements
 def AER_check(func):
     """ Attribute Error Check """
     try:
