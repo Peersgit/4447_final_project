@@ -51,7 +51,7 @@ This is a final project for COMP 4447 that demonstrates collecting, manipulating
 - final_score_diff : The difference between the final score for the home and away team
 - home_avg : The average points score for all 4 quarters, home
 - away_avg : The average points score for all 4 quarters, away
-- winner : The finner of the game, 1:home, 0:away
+- winner : The winner of the game, 1:home, 0:away
 - lat_away : Coordinates for the away team
 - long_away : Coordinates for the away team
 - lat_home : Coordinates for the home team
