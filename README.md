@@ -10,7 +10,7 @@ This is a final project for COMP 4447 that demonstrates collecting, manipulating
 
 
 # Data Source
-- [ESPN](https://www.espn.com/nfl/scoreboard)
+- [ESPN](https://www.espn.com/nfl/scoreboard/_/week/1/year/2022/seasontype/2)
 - [Scraper](ScrapeESPN.py)
 
 
